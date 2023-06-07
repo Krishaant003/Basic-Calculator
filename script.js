@@ -19,11 +19,12 @@ for( var i = 0 ; i < number.length ; i ++)
         {
             input.innerHTML += e.target.innerHTML;
         }
-        else if (resultDisplayed === true && lastchar === "+" || lastchar === "-" ||lastchar === "×" ||lastchar === "÷")
+        else if (resultDisplayed === true && lastChar === "+" || lastChar === "-" || lastChar === "×" || lastChar === "÷") 
         {
+            
             resultDisplayed = false;
-            input.innerHTML = e.target.innerHTMl;
-        }
+            input.innerHTML += e.target.innerHTML;
+          }
         else
         {
             resultDisplayed = false;
