@@ -12,19 +12,21 @@ for( var i = 0 ; i < number.length ; i ++)
 {
     number[i].addEventListener("click",function(e){
         var currentString = input.innerHTML;
-        var lastchar = currentString[currentString.length - 1];
+        var lastChar = currentString[currentString.length - 1];
 
 
         if (resultDisplayed === false)
         {
             input.innerHTML += e.target.innerHTML;
         }
+        
         else if (resultDisplayed === true && lastChar === "+" || lastChar === "-" || lastChar === "×" || lastChar === "÷") 
         {
             
             resultDisplayed = false;
             input.innerHTML += e.target.innerHTML;
           }
+        
         else
         {
             resultDisplayed = false;
